@@ -147,7 +147,7 @@ export default {
 </script>
 
 <style>
-.sandtable {
+.draggable {
   touch-action: none;
 }
 </style>
