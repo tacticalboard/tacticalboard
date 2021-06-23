@@ -6,5 +6,6 @@
 html,
 body {
     overscroll-behavior-y: contain;
+    touch-action:none;
 }
 </style>

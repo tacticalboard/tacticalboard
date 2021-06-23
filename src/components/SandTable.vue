@@ -147,7 +147,4 @@ export default {
 </script>
 
 <style>
-body.is-dragging {
-  touch-actions: pinch-zoom;
-}
 </style>
