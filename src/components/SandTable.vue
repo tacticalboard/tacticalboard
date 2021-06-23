@@ -147,9 +147,7 @@ export default {
 </script>
 
 <style>
-.sandtable_bg {
-  background-image: url("../assets/court.jpg");
-  background-repeat: no-repeat;
-  background-size: contain, cover;
+body.is-dragging {
+  touch-actions: pinch-zoom;
 }
 </style>
