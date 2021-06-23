@@ -51,6 +51,15 @@
           border-white border-4
         "
       ></div>
+      <div
+        class="
+          draggable
+          w-10
+          h-10
+        "
+      >
+      <img src="@/assets/shuttlecock.svg" alt="">
+      </div>
     </div>
   </div>
 </template>
