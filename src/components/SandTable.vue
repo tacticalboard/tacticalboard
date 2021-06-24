@@ -7,7 +7,7 @@
       <div
         class="
           absolute
-          p-1
+          p-3
           top-1
           right-1
           cursor-pointer
@@ -37,22 +37,22 @@
       <div class="z-10 absolute h-full w-full left-0 top-0 flex justify-center">
         <div
           class="draggable bg-blue-500 rounded-full border-white"
-          :style="widget_style"
+          :style="widget_style_with_border"
         ></div>
         <div
           class="draggable bg-blue-500 rounded-full border-white"
-          :style="widget_style"
+          :style="widget_style_with_border"
         ></div>
         <div :style="widget_style" class="draggable border-transparent">
           <img src="@/assets/shuttlecock.svg" alt="" />
         </div>
         <div
           class="draggable bg-red-500 rounded-full border-white"
-          :style="widget_style"
+          :style="widget_style_with_border"
         ></div>
         <div
           class="draggable bg-red-500 rounded-full border-white"
-          :style="widget_style"
+          :style="widget_style_with_border"
         ></div>
       </div>
     </div>
@@ -69,7 +69,7 @@ export default {
     return {
       WIDTH: 732,
       LENGTH: 1462,
-      WIDGET_SIZE: 60,
+      WIDGET_SIZE: 57.5,
       BORDER_SIZE: 6.5,
     };
   },
@@ -156,7 +156,12 @@ export default {
     widget_style: function () {
       return {
         height: this.ratio * this.WIDGET_SIZE + "px",
-        width: this.ratio * this.WIDGET_SIZE + "px",
+        width: this.ratio * this.WIDGET_SIZE + "px"
+      };
+    },
+    widget_style_with_border: function () {
+      return {
+        ...this.widget_style,
         "border-width": this.ratio * this.BORDER_SIZE + "px",
       };
     },
