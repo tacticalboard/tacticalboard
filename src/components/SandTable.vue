@@ -1,64 +1,36 @@
 <template>
-  <div class="sandtable relative" ref="sandtable" :style="sandtable_style">
-    <img
-      v-if="is_wide_screen"
-      src="@/assets/court.jpg"
-      class="z-0 w-full h-full absolute"
-    />
-    <img
-      v-else
-      src="@/assets/court-v.jpg"
-      class="z-0 w-full h-full absolute"
-    />
-    <div class="z-10 absolute h-full w-full left-0 top-0">
-      <div
-        class="
-          draggable
-          w-10
-          h-10
-          bg-blue-500
-          rounded-full
-          border-white border-4
-        "
-      ></div>
-      <div
-        class="
-          draggable
-          w-10
-          h-10
-          bg-blue-500
-          rounded-full
-          border-white border-4
-        "
-      ></div>
-      <div
-        class="
-          draggable
-          w-10
-          h-10
-          bg-red-500
-          rounded-full
-          border-white border-4
-        "
-      ></div>
-      <div
-        class="
-          draggable
-          w-10
-          h-10
-          bg-red-500
-          rounded-full
-          border-white border-4
-        "
-      ></div>
-      <div
-        class="
-          draggable
-          w-10
-          h-10
-        "
-      >
-      <img src="@/assets/shuttlecock.svg" alt="">
+  <div class="flex justify-center items-center min-h-screen w-screen">
+    <div class="sandtable relative" ref="sandtable" :style="sandtable_style">
+      <img
+        v-if="is_wide_screen"
+        src="@/assets/court.svg"
+        class="z-0 w-full h-full absolute"
+      />
+      <img
+        v-else
+        src="@/assets/court-v.svg"
+        class="z-0 w-full h-full absolute"
+      />
+      <div class="z-10 absolute h-full w-full left-0 top-0 flex justify-center">
+        <div
+          class="draggable bg-blue-500 rounded-full border-white"
+          :style="widget_style"
+        ></div>
+        <div
+          class="draggable bg-blue-500 rounded-full border-white"
+          :style="widget_style"
+        ></div>
+        <div :style="widget_style" class="draggable border-transparent">
+          <img src="@/assets/shuttlecock.svg" alt="" />
+        </div>
+        <div
+          class="draggable bg-red-500 rounded-full border-white"
+          :style="widget_style"
+        ></div>
+        <div
+          class="draggable bg-red-500 rounded-full border-white"
+          :style="widget_style"
+        ></div>
       </div>
     </div>
   </div>
@@ -70,12 +42,16 @@ import interact from "interactjs";
 export default {
   name: "SandTable",
   data() {
-    return {};
+    return {
+      WIDTH: 732,
+      LENGTH: 1462,
+      WIDGET_SIZE: 60,
+      BORDER_SIZE: 6.5,
+    };
   },
   props: {},
 
   mounted: function () {
-    console.log(this.is_wide_screen)
     this.init_interact();
   },
 
@@ -129,6 +105,14 @@ export default {
       target.setAttribute("data-x", x);
       target.setAttribute("data-y", y);
     },
+
+    length2width: function (length) {
+      return (length / this.LENGTH) * this.WIDTH;
+    },
+
+    width2length: function (width) {
+      return (width / this.WIDTH) * this.LENGTH;
+    },
   },
 
   computed: {
@@ -138,18 +122,34 @@ export default {
         width: this.width + "px",
       };
     },
+    widget_style: function () {
+      return {
+        height: this.ratio * this.WIDGET_SIZE + "px",
+        width: this.ratio * this.WIDGET_SIZE + "px",
+        "border-width": this.ratio * this.BORDER_SIZE + "px",
+      };
+    },
     is_wide_screen: function () {
       return window.innerWidth > window.innerHeight;
     },
     width: function () {
-      return window.innerWidth;
+      return this.ratio * (this.is_wide_screen ? this.LENGTH : this.WIDTH);
     },
     height: function () {
-      if (!this.is_wide_screen) {
-        return (window.innerWidth / 591) * 1200;
+      return this.ratio * (this.is_wide_screen ? this.WIDTH : this.LENGTH);
+    },
+    ratio: function () {
+      let length = 0;
+      let transform_length = 0;
+      if (this.is_wide_screen) {
+        length = window.innerWidth;
+        transform_length = this.width2length(window.innerHeight);
       } else {
-        return (window.innerWidth / 1200) * 591;
+        length = window.innerHeight;
+        transform_length = this.width2length(window.innerWidth);
       }
+      length = length <= transform_length ? length : transform_length;
+      return length / this.LENGTH;
     },
   },
 };
