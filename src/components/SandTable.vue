@@ -5,10 +5,24 @@
   >
     <div class="sandtable relative" ref="sandtable" :style="sandtable_style">
       <div
-        class="absolute top-2 right-2 cursor-pointer z-20 w-8 h-8 opacity-10 hover:opacity-60 transition duration-150 ease-in-out"
+        class="
+          absolute
+          p-1
+          top-1
+          right-1
+          cursor-pointer
+          z-20
+          opacity-5
+          hover:opacity-60
+          transition
+          duration-150
+          ease-in-out
+          border-transparent
+        "
+        :style="widget_style"
         @click="fullscreen"
       >
-      <img src="@/assets/fullscreen.svg" alt="">
+        <img src="@/assets/fullscreen.svg" alt="" />
       </div>
       <img
         v-if="is_wide_screen"
