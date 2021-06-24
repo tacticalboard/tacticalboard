@@ -1,6 +1,15 @@
 <template>
-  <div class="flex justify-center items-center min-h-screen w-screen">
+  <div
+    class="flex justify-center items-center min-h-screen w-screen bg-gray-800"
+    ref="sandtable"
+  >
     <div class="sandtable relative" ref="sandtable" :style="sandtable_style">
+      <div
+        class="absolute top-2 right-2 cursor-pointer z-20 w-8 h-8 opacity-10 hover:opacity-60 transition duration-150 ease-in-out"
+        @click="fullscreen"
+      >
+      <img src="@/assets/fullscreen.svg" alt="">
+      </div>
       <img
         v-if="is_wide_screen"
         src="@/assets/court.svg"
@@ -38,6 +47,7 @@
 
 <script>
 import interact from "interactjs";
+import screenfull from "screenfull";
 
 export default {
   name: "SandTable",
@@ -112,6 +122,13 @@ export default {
 
     width2length: function (width) {
       return (width / this.WIDTH) * this.LENGTH;
+    },
+
+    fullscreen: function () {
+      console.log("fullscreen");
+      if (screenfull.isEnabled) {
+        screenfull.toggle(this.$refs.sandtable);
+      }
     },
   },
 

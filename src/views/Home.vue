@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-800">
-    <SandTable msg="Welcome to Your Vue.js App"/>
+    <SandTable />
   </div>
 </template>
 
