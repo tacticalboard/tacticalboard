@@ -7,7 +7,6 @@
       <div
         class="
           absolute
-          p-3
           top-1
           right-1
           cursor-pointer
@@ -19,7 +18,7 @@
           ease-in-out
           border-transparent
         "
-        :style="widget_style"
+        :style="widget_style_with_padding"
         @click="fullscreen"
       >
         <img src="@/assets/fullscreen.svg" alt="" />
@@ -156,13 +155,19 @@ export default {
     widget_style: function () {
       return {
         height: this.ratio * this.WIDGET_SIZE + "px",
-        width: this.ratio * this.WIDGET_SIZE + "px"
+        width: this.ratio * this.WIDGET_SIZE + "px",
       };
     },
     widget_style_with_border: function () {
       return {
         ...this.widget_style,
         "border-width": this.ratio * this.BORDER_SIZE + "px",
+      };
+    },
+    widget_style_with_padding: function () {
+      return {
+        ...this.widget_style,
+        padding: this.ratio * this.BORDER_SIZE * 1.5 + "px",
       };
     },
     is_wide_screen: function () {
