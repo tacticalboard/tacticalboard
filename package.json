@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && cp dist/index.html dist/404.html",
     "lint": "vue-cli-service lint",
     "predeploy": "yarn build",
     "deploy": "gh-pages -b master -d dist -r https://github.com/tacticalboard/tacticalboard.github.io.git",
