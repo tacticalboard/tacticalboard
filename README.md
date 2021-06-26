@@ -1,24 +1,33 @@
-# board
+# Tactical Board
 
-## Project setup
-```
-yarn install
-```
+Tactical boards on your devices. Make tactical communication convenient.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## Badminton tactical board
 
-### Compiles and minifies for production
-```
-yarn build
-```
+[Open the board Now!](https://tacticalboard.github.io/)
 
-### Lints and fixes files
-```
-yarn lint
-```
+![](image/screenshot.jpg)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Football tactical board
+
+[Open the board Now!](https://tacticalboard.github.io/football)
+
+![](image/screenshot_football.jpg)
+
+## Basketball tactical board
+
+[Open the board Now!](https://tacticalboard.github.io/basketball)
+
+![](image/screenshot_basketball.jpg)
+
+
+## Packages used
+
+- [Vue.js](https://v3.vuejs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [interact.js](https://interactjs.io/)
+- [screenfull.js](https://github.com/sindresorhus/screenfull.js/)
+
+## License
+
+MIT License
