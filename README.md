@@ -4,21 +4,21 @@ Tactical boards on your devices. Make tactical communication convenient.
 
 ## Badminton tactical board
 
-[Open the board Now!](https://tacticalboard.github.io/)
+[Open the board Now!](https://tacticalboard.github.io/shuttle)
 
-![](image/screenshot.jpg)
+![](src/assets/screenshot/shuttle.jpg)
 
 ## Football tactical board
 
 [Open the board Now!](https://tacticalboard.github.io/football)
 
-![](image/screenshot_football.jpg)
+![](src/assets/screenshot/football.jpg)
 
 ## Basketball tactical board
 
 [Open the board Now!](https://tacticalboard.github.io/basketball)
 
-![](image/screenshot_basketball.jpg)
+![](src/assets/screenshot/basketball.jpg)
 
 
 ## Packages used

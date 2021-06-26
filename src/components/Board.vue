@@ -4,26 +4,6 @@
     ref="board"
   >
     <div class="board relative" ref="board" :style="board_style">
-      <div
-        class="
-          absolute
-          top-1
-          right-1
-          cursor-pointer
-          z-20
-          opacity-5
-          hover:opacity-60
-          transition
-          duration-150
-          ease-in-out
-          border-transparent
-          w-5
-          h-5
-        "
-        @click="fullscreen"
-      >
-        <img src="@/assets/fullscreen.svg" alt="" />
-      </div>
       <img
         v-if="is_wide_screen"
         :src="require('@/assets/' + field)"
@@ -40,8 +20,6 @@
 </template>
 
 <script>
-import screenfull from "screenfull";
-
 export default {
   name: "ShuttleBoard",
   data() {
@@ -77,13 +55,6 @@ export default {
 
     width2length: function (width) {
       return (width / this.field_width) * this.field_length;
-    },
-
-    fullscreen: function () {
-      console.log("fullscreen");
-      if (screenfull.isEnabled) {
-        screenfull.toggle(this.$refs.board);
-      }
     },
   },
 

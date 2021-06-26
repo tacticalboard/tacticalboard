@@ -16,6 +16,7 @@
     "interactjs": "^1.10.11",
     "screenfull": "^5.1.0",
     "vue": "^3.0.0",
+    "vue-github-button": "^3.0.1",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {

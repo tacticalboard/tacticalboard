@@ -1,12 +1,19 @@
 <template>
-  <div class="z-10 absolute h-full w-full left-0 top-0 flex justify-center">
+  <div
+    class="z-10 absolute h-full w-full left-0 top-0 flex justify-center"
+    v-bind:class="{
+      'flex-col': !is_wide_screen,
+      'items-end': !is_wide_screen,
+      'flex-row': is_wide_screen,
+    }"
+  >
     <div
       class="draggable bg-blue-500 rounded-full border-white"
       :style="widget_style_with_border"
       v-for="i in Array(n).keys()"
       :key="'blue' + i"
     ></div>
-    <div :style="widget_style" class="draggable border-transparent">
+    <div @dblclick="fullscreen" :style="widget_style" class="draggable border-transparent">
       <img :src="require('@/assets/' + ball)" alt="" />
     </div>
     <div
@@ -20,36 +27,41 @@
 
 <script>
 import interact from "interactjs";
+import screenfull from "screenfull";
 
 export default {
-
-  data () {
+  data() {
     return {
       WIDGET_SIZE: 57.5,
       BORDER_SIZE: 6.5,
-    }
+    };
   },
 
   props: {
     n: {
       default: 2,
-      type: Number
+      type: Number,
     },
     ball: {
-      default: 'shuttlecock.svg',
-      type: String
+      default: "shuttlecock.svg",
+      type: String,
     },
     scale: {
-      default: 1.,
-      type: Number
-    }
+      default: 1,
+      type: Number,
+    },
   },
-  
+
   mounted: function () {
     this.init_interact();
   },
 
   methods: {
+    fullscreen: function () {
+      if (screenfull.isEnabled) {
+        screenfull.toggle(this.$refs.board);
+      }
+    },
     init_interact: function () {
       interact(".draggable").draggable({
         // enable inertial throwing
@@ -98,7 +110,7 @@ export default {
       // update the posiion attributes
       target.setAttribute("data-x", x);
       target.setAttribute("data-y", y);
-    }
+    },
   },
 
   computed: {
@@ -123,8 +135,11 @@ export default {
         padding: this.final_scale * this.BORDER_SIZE * 1.5 + "px",
       };
     },
-  }
-}
+    is_wide_screen: function () {
+      return this.$parent.is_wide_screen;
+    }
+  },
+};
 </script>
 
 <style>

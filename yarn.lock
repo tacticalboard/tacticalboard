@@ -4329,6 +4329,11 @@ gh-pages@^3.2.3:
     fs-extra "^8.1.0"
     globby "^6.1.0"
 
+github-buttons@^2.14.3:
+  version "2.18.1"
+  resolved "https://registry.nlark.com/github-buttons/download/github-buttons-2.18.1.tgz#93737ca38dd6a108799ebbbce7bafc46eb80c535"
+  integrity sha1-k3N8o43WoQh5nru857r8RuuAxTU=
+
 glob-parent@^3.1.0:
   version "3.1.0"
   resolved "https://registry.nlark.com/glob-parent/download/glob-parent-3.1.0.tgz#9e6af6299d8d3bd2bd40430832bd113df906c5ae"
@@ -8726,6 +8731,13 @@ vue-eslint-parser@^7.6.0:
     espree "^6.2.1"
     esquery "^1.4.0"
     lodash "^4.17.15"
+
+vue-github-button@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npm.taobao.org/vue-github-button/download/vue-github-button-3.0.1.tgz#f3d43820a7c3ba754924e12df53ba071089a49cb"
+  integrity sha1-89Q4IKfDunVJJOEt9TugcQiaScs=
+  dependencies:
+    github-buttons "^2.14.3"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.4"
