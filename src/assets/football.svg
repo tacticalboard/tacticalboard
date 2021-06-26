@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg2" inkscape:version="0.44" sodipodi:docbase="d:\" sodipodi:docname="Football_field.svg" sodipodi:version="0.32" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1060 700"
+	 style="enable-background:new 0 0 1060 700;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#00A000;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:5.0743;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:5;}
+	.st3{fill:#FFFFFF;}
+</style>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" height="1060px" id="base" inkscape:current-layer="layer1" inkscape:cx="350" inkscape:cy="514.82112" inkscape:document-units="px" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:showpageshadow="false" inkscape:window-height="977" inkscape:window-width="1280" inkscape:window-x="-4" inkscape:window-y="-4" inkscape:zoom="0.73867925" pagecolor="#ffffff" width="700px">
+	</sodipodi:namedview>
+<g id="layer1" inkscape:groupmode="layer" inkscape:label="Warstwa 1">
+	<rect id="rect1872" class="st0" width="1060" height="700"/>
+	<g id="g3772">
+		<path id="path3770" sodipodi:nodetypes="cccccc" class="st1" d="M869.1,276.5v-2.1c-23.6,16.8-39.1,44.4-39.1,75.5l0,0
+			c0,31.2,15.4,58.7,39.1,75.5v-2"/>
+		<path id="path3747" class="st2" d="M1030,547.1v2.5H869.1l0,0V150.5H1030v2.5"/>
+		
+			<path id="path10770" sodipodi:cx="421.04385" sodipodi:cy="845.37323" sodipodi:rx="5.635386" sodipodi:ry="5.2328587" sodipodi:type="arc" class="st3" d="
+			M922.6,345c2.8,0,5,2.2,5,5s-2.2,5-5,5l0,0c-2.8,0-5-2.2-5-5S919.9,345,922.6,345L922.6,345z"/>
+		
+			<path id="path11672" sodipodi:cx="421.04385" sodipodi:cy="845.37323" sodipodi:rx="5.635386" sodipodi:ry="5.2328587" sodipodi:type="arc" class="st3" d="
+			M530,344c3.3,0,6,2.7,6,6s-2.7,6-6,6l0,0c-3.3,0-6-2.7-6-6S526.7,344,530,344L530,344z"/>
+		
+			<path id="path11674" sodipodi:cx="421.04385" sodipodi:cy="845.37323" sodipodi:rx="5.635386" sodipodi:ry="5.2328587" sodipodi:type="arc" class="st3" d="
+			M137.6,345c2.8,0,5,2.2,5,5s-2.2,5-5,5l0,0c-2.8,0-5-2.2-5-5S134.9,345,137.6,345L137.6,345z"/>
+		<path id="path1911" class="st2" d="M1016,669.4c-0.2-7,5.5-12.7,12.6-12.9c0.1,0,0.2,0,0.3,0"/>
+		<path id="path3742" class="st2" d="M1030,437.6v2.5h-51.9l0,0V259.9h51.9v2.5"/>
+		<path id="path1905" class="st2" d="M530,257.5c51.1,0,92.5,41.5,92.5,92.5S581,442.5,530,442.5S437.5,401,437.5,350
+			S478.9,257.5,530,257.5z"/>
+		<path id="path1903" class="st2" d="M530,669.6c0-639.3,0-639.3,0-639.3"/>
+		<path id="path2803" class="st2" d="M30,262.4v-2.5h51.9V440H30l0,0v-2.5"/>
+		<path id="path1899" class="st2" d="M30,670V30h1000v640H30z"/>
+		<path id="path2817" class="st2" d="M30,153v-2.5h160.9v399.1H30l0,0V547"/>
+		<path id="path2832" sodipodi:nodetypes="cccscc" class="st2" d="M190.9,423.7v2l0,0c23.8-16.7,39.4-44.4,39.4-75.8
+			c0-31.3-15.6-59-39.4-75.8v2"/>
+		<path id="path1893" class="st2" d="M43.8,31.4c0.2,7-5.5,12.7-12.6,12.9c-0.1,0-0.2,0-0.3,0"/>
+		<path id="path1891" class="st2" d="M31,655.7c7-0.2,12.7,5.5,12.9,12.6c0,0.1,0,0.2,0,0.3"/>
+		<path id="path13489" class="st2" d="M1028.5,44.7c-7,0.2-12.7-5.5-12.9-12.6c0-0.1,0-0.2,0-0.3"/>
+	</g>
+</g>
+</svg>

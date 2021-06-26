@@ -1,4 +1,4 @@
-# sandtable
+# board
 
 ## Project setup
 ```

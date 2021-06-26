@@ -2,6 +2,9 @@
   <router-view/>
 </template>
 
+<script>
+</script>
+
 <style>
 html,
 body {

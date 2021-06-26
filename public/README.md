@@ -1,10 +1,24 @@
-# Badminton Tactical Board
+# Tactical Board
 
-A badminton tactical board on your devices. Make tactical communication convenient.
+Make tactical communication convenient.
 
-[Open the Sand Table Now!](https://shuttle-sand-table.github.io/)
+## Badminton tactical board
+
+[Open the board Now!](https://tacticalboard.github.io/)
 
 ![](screenshot.jpg)
+
+## Football tactical board
+
+[Open the board Now!](https://tacticalboard.github.io/football)
+
+![](screenshot_football.jpg)
+
+## Basketball tactical board
+
+[Open the board Now!](https://tacticalboard.github.io/basketball)
+
+![](screenshot_basketball.jpg)
 
 
 ## Packages used
@@ -13,3 +27,6 @@ A badminton tactical board on your devices. Make tactical communication convenie
 - [TailwindCSS](https://tailwindcss.com/)
 - [interact.js](https://interactjs.io/)
 - [screenfull.js](https://github.com/sindresorhus/screenfull.js/)
+
+## License
+

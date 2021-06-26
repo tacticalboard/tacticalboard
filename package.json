@@ -1,5 +1,5 @@
 {
-  "name": "sandtable",
+  "name": "board",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,9 +8,10 @@
     "lint": "vue-cli-service lint",
     "predeploy": "yarn build",
     "deploy": "gh-pages -b master -d dist",
-    "postdeploy": "git add . --all && git commit -m 'update source'; git push origin master:source"
+    "postdeploy": "git add . --all && git commit -m 'update source'; git push origin master"
   },
   "dependencies": {
+    "@vueuse/head": "^0.6.0",
     "core-js": "^3.6.5",
     "interactjs": "^1.10.11",
     "screenfull": "^5.1.0",
