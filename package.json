@@ -7,8 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d dist",
-    "postdeploy": "git add . --all && git commit -m 'update source'; git push origin master"
+    "deploy": "gh-pages -b master -d dist -r https://github.com/tacticalboard/tacticalboard.github.io.git",
+    "postdeploy": "git add . --all && git commit -m 'update source'; git push origin master -f"
   },
   "dependencies": {
     "@vueuse/head": "^0.6.0",
