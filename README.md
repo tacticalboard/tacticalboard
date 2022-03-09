@@ -25,6 +25,7 @@ Tactical boards on your devices. Make tactical communication convenient.
 
 - [Vue.js](https://v3.vuejs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
+- [two.js](https://two.js.org/)
 - [interact.js](https://interactjs.io/)
 - [screenfull.js](https://github.com/sindresorhus/screenfull.js/)
 

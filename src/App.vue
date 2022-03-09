@@ -1,5 +1,5 @@
 <template>
-  <router-view/>
+  <router-view class="select-none touch-none" />
 </template>
 
 <script>
@@ -8,6 +8,8 @@
 <style>
 html,
 body {
-    overscroll-behavior-y: contain;
+  overscroll-behavior-y: none;
+  /* position: fixed; */
+  overflow: auto;
 }
 </style>

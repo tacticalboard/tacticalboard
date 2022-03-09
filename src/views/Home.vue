@@ -28,7 +28,16 @@
     </div>
     <div>
       <p class="text-center text-xs mt-5 text-gray-400">
-        *Double click the ball to enter/exit the full screen mode.
+        Double click the ball to enter/exit the full screen mode.
+      </p>
+      <p class="text-center text-xs mt-1 text-gray-400">
+        Select the pen to draw lines.
+      </p>
+      <p class="text-center text-xs mt-1 text-gray-400">
+        Select the eraser and click a line to remove the line.
+      </p>
+      <p class="text-center text-xs mt-1 text-gray-400">
+        Select the eraser and double click the screen to remove all lines.
       </p>
     </div>
   </div>

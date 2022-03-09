@@ -14,7 +14,9 @@
         :src="require('@/assets/' + v_field)"
         class="z-0 w-full h-full absolute"
       />
-      <slot></slot>
+      <div class="z-10 w-full h-full absolute">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -23,30 +25,28 @@
 export default {
   name: "ShuttleBoard",
   data() {
-    return {
-    };
+    return {};
   },
   props: {
     field: {
       type: String,
-      default: 'shuttle.svg'
+      default: "shuttle.svg",
     },
     v_field: {
       type: String,
-      default: 'shuttle-v.svg'
+      default: "shuttle-v.svg",
     },
     field_length: {
       type: Number,
-      default: 1462
+      default: 1462,
     },
     field_width: {
       type: Number,
-      default: 732
-    }
+      default: 732,
+    },
   },
 
-  mounted: function () {
-  },
+  mounted: function () {},
 
   methods: {
     length2width: function (length) {
@@ -69,10 +69,16 @@ export default {
       return window.innerWidth > window.innerHeight;
     },
     width: function () {
-      return this.ratio * (this.is_wide_screen ? this.field_length : this.field_width);
+      return (
+        this.ratio *
+        (this.is_wide_screen ? this.field_length : this.field_width)
+      );
     },
     height: function () {
-      return this.ratio * (this.is_wide_screen ? this.field_width : this.field_length);
+      return (
+        this.ratio *
+        (this.is_wide_screen ? this.field_width : this.field_length)
+      );
     },
     ratio: function () {
       let length = 0;
